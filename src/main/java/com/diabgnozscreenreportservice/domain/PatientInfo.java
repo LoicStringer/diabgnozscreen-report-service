@@ -2,11 +2,17 @@ package com.diabgnozscreenreportservice.domain;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+
+import com.diabgnozscreenreportservice.utility.PatientGender;
+
+@Component
 public class PatientInfo {
 
 	private Long patientId;
 	private String patientLastName;
 	private String patientFirstName;
+	private PatientGender patientGender;
 	private LocalDate patientBirthDate;
 
 	public PatientInfo() {
@@ -34,6 +40,14 @@ public class PatientInfo {
 
 	public void setPatientFirstName(String patientFirstName) {
 		this.patientFirstName = patientFirstName;
+	}
+	
+	public PatientGender getPatientGender() {
+		return patientGender;
+	}
+
+	public void setPatientGender(PatientGender patientGender) {
+		this.patientGender = patientGender;
 	}
 
 	public LocalDate getPatientBirthDate() {
