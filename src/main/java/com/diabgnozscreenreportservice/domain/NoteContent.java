@@ -10,7 +10,6 @@ public class NoteContent {
 	public NoteContent() {}
 
 	public NoteContent(String noteContent) {
-		super();
 		this.noteContent = noteContent;
 	}
 
