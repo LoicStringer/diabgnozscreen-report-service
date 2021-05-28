@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.diabgnozscreenreportservice.domain.NoteContent;
 
-
-
 @FeignClient(name = "${feignClient.notesService.name}", url = "${feignClient.notesService.url}")
 public interface NotesServiceProxy {
 

@@ -8,7 +8,6 @@ public class DiabetesRiskReport {
 	private String patientLastName;
 	private int patientAge;
 	private String speech;
-	
 	private RiskLevelEnum diabetesRiskLevel;
 	
 	public DiabetesRiskReport() {

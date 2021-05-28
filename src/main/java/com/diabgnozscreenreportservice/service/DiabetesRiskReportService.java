@@ -36,6 +36,7 @@ public class DiabetesRiskReportService {
 		PatientGender patientGender = patientRecord.getPatientInfo().getPatientGender();
 		int patientAge = patientRecord.getPatientAge();
 		List<String> patientHistory = patientRecord.getPatientHistory();	
+		
 		if (patientGender == PatientGender.F) {
 			result = riskLevelRulesService.evaluateDiabetesRiskLevelForWomen(patientAge,patientHistory);
 			return result;
